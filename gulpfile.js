@@ -29,7 +29,7 @@ gulp.task('styles', function() {
 gulp.task('watch', function() {
 	gulp.watch('sass/*.scss', ['styles']);
 	gulp.watch('js/*.js', ['jshint']);
-	gulp.watch('**/*.html', reload);
+	gulp.watch('**/*.php', reload);
 });
 
 gulp.task('jshint', function() {
