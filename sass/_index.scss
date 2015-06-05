@@ -18,6 +18,8 @@ section#portfolio.portfolio{
 
 // portfolio item layout
 
+// feature post
+
 .portfolioItem.item-0 {
 	position: relative;
 	margin-bottom: 200px;
@@ -29,16 +31,16 @@ section#portfolio.portfolio{
 
 .portfolioItem.item-0 h3 {
 	position: absolute;
-	bottom: 70px;
-	left: 70px;
+	bottom: -32px;
+	left: 350px;
 	z-index: 100000;
-	font-size: 30px;
+	font-size: 50px;
 	letter-spacing: 3px;
 	margin: 0;
+	width: 10%;
 }
 
 .portfolioItem.item-0 .postContent {
-	font-size: 14px;
 	width: 50%;
 	border: 1px solid $grey;
 	padding: 20px 300px 20px 50px;
@@ -48,17 +50,45 @@ section#portfolio.portfolio{
 	left: 20px;
 }
 
-
-
-
+// post two
 
 .portfolioItem.item-1 {
-	
+	display: flex;
+	position: relative;
+	margin-bottom: 50px;
 }
+
+.portfolioItem.item-1 .img {
+}
+
+.portfolioItem.item-1 .postContent{
+	width: 30%;
+	border: 1px solid $grey;
+	padding: 200px 20px 5px 20px;
+	margin-left: 20px;
+	margin-bottom: 0;
+}
+
+.portfolioItem.item-1 .postTitle{
+	position: absolute;
+	width: 20%;
+	top: 30px;
+	right: 55px;
+	h3 {
+		font-size: 50px;
+		letter-spacing: 3px;
+		margin: 0;
+	}
+}
+
+// post three
 
 .portfolioItem.item-2 {
 	
 }
+
+
+// post four
 
 .portfolioItem.item-3 {
 	
