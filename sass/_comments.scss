@@ -68,7 +68,7 @@ h3 {
 	margin: 0 0 5px;
 	a {
 		&:link, &:visited {
-			color: #888888;
+			// color: #888888;
 			text-decoration: none;
 		}
 	}
@@ -78,12 +78,12 @@ h3 {
 	font-size: 12px;
 	padding: 0 0 24px;
 	a {
-		color: #888888;
+		// color: #888888;
 	}
 }
 
 a.comment-edit-link {
-	color: #888888;
+	// color: #888888;
 }
 
 .commentlist .children li {
@@ -168,12 +168,12 @@ h3#reply-title {
 		width: 98%;
 	}
 	dt {
-		color: #888888;
+		// color: #888888;
 		font-size: 12px;
 		line-height: 18px;
 	}
 	dd {
-		color: #888888;
+		// color: #888888;
 		font-size: 12px;
 		line-height: 18px;
 		code {
@@ -214,12 +214,12 @@ p.form-allowed-tags, .nocomments {
 
 .comment-meta a {
 	&:active, &:hover {
-		color: #ff4b33;
+		// color: #ff4b33;
 	}
 }
 
 .reply a:hover, a.comment-edit-link:hover {
-	color: #ff4b33;
+	// color: #ff4b33;
 }
 
 #respond p, #comments-list ul #respond {

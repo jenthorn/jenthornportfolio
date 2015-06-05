@@ -1,8 +1,19 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #000000;
+}
+
+h1, h2, h3 {
+	font-family: proxima-nova;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
 a {
-	color: #BA209B;
 	text-decoration: none;
+	color: #000;
 	&:hover {
-		color: #D424B1;
+		color: #C5A868;
 	}
 }
 

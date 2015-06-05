@@ -6,13 +6,14 @@
 * Author: HackerYou
 * Author URI: http://hackeryou.com
 */
-
+@import 'colour';
 @import 'normalize';
+@import 'index';
 @import 'typography';
-@import 'navigation';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+@import 'header';
 /*
 ====================================
 Default Styling
@@ -21,10 +22,6 @@ Default Styling
 
 img {
 	max-width: 100%;
-}
-
-body {
-	color: #333;
 }
 
 .container {

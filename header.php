@@ -10,7 +10,11 @@
   <?php // Load our CSS ?>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-
+  <script src="//use.typekit.net/rnh3utu.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/evil-icons/1.7.2/evil-icons.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/evil-icons/1.7.2/evil-icons.min.js"></script>
   <?php wp_head(); ?>
 </head>
 
@@ -24,16 +28,23 @@
         <?php bloginfo( 'name' ); ?>
       </a>
     </h1>
+    <h2 class="title">Design / Development</h2>
+    <img src="<?php echo get_template_directory_uri(); ?>/images/goldBolt.png" alt=""> 
 
     <?php wp_nav_menu( array(
       'container' => false,
       'theme_locations' => 'primary'
     )); ?>
 
-    <h2>Hello</h2>
-    <p>Jen Thorn - an ambitious Web Designer, and Front-End Developer based out of Toronto.</p>
-    <p><i class="fa fa-envelope"></i>  hello@jenthorn.ca</p>
-    <p><i class="fa fa-twitter"></i>  jenthorn_</p>
+    <h2 class="hello">Hello,</h2>
+    <p class="aboutP">I'm Jen, a Designer and Front-End Developer in Toronto. Recent Alumni of HackerYou's Front-End Developer Boot Camp, I am looking for some Lorem ipsum dolor sit amet. </p>
+    <p class="aboutPTwo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, earum!</p>
+    
+    <div class="links">
+      <p><a href="mailto:hello@jenthorn.ca"><i class="fa fa-envelope-o"></i>  hello@jenthorn.ca</a></p>
+      <p><a href="https://github.com/jenthorn"><i class="fa fa-code-fork"></i> GitHub</a></p>
+      <p><a href="http://twitter.com/jenthorn_"><i class="fa fa-twitter"></i> jenthorn_</a></p>
+    </div>
   </div> <!-- /.container -->
 </header><!--/.header-->
 

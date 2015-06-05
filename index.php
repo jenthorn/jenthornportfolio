@@ -4,12 +4,9 @@
 <div class="main">
   <div class="container">
 
-    <div class="content">
-    		<?php // get_template_part( 'loop', 'index' );	?>
-    </div> <!--/.content -->
 
-    <?php //get_single-portfolio(); ?>
-
+		<section class="portfolio" id="portfolio">
+			<h2>Projects</h2>
     <?php
 
     $portfolioQuery = new WP_Query(
@@ -20,32 +17,35 @@
     		)
     ); ?>
 
-    <?php if ( $portfolioQuery->have_posts() ) : ?>
+    <?php $count = 0; if ( $portfolioQuery->have_posts() ) : ?>
 
     	<?php while ($portfolioQuery->have_posts()) : $portfolioQuery->the_post(); ?>
-
-    		<section id="<?php echo $post->post_name; ?>">
+				
+    		<article class="portfolioItem item-<?php echo $count; ?>" id="<?php echo $post->post_name; ?>">
     			<h3><?php the_title(); ?></h3>
     			<p><?php the_field('short_description') ?></p>	
     			<?php the_content(); ?>
-    		
+    			<a href="<?php the_field('live_link'); ?>">View Live</a>
     			  <div class="image">
     			        <?php $preview_image = get_field('preview_image'); ?>
     			        <img src="<?php echo $preview_image['sizes']['large'] ?>">
     			     
     			      </div>
     	
-     		</section>
+     		</article>
+     		<?php $count++; ?>
     	<?php endwhile; ?>
-
     	<?php wp_reset_postdata(); ?>
-
     <?php else:  ?>
     	[stuff that happens if there aren't any posts]
     <?php endif; ?>
 
+		</section>
 
-    <?//php get_sidebar(); ?>
+    <section class="about" id="about">
+    	<h2>About</h2>
+    	<p>Heyooooooo. This is about me. I shit the bed</p>
+    </section>
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->

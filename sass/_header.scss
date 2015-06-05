@@ -1,0 +1,85 @@
+header {
+	margin-bottom: 500px;
+	position: relative;
+}
+
+h1 {
+	font-size: 55px;
+	width: 20%;
+	text-align: center;
+	letter-spacing: 3px;
+	color: #000000;
+	line-height: 1;
+}
+
+h2.title {
+	font-weight: 300;
+	letter-spacing: 5px;
+	font-size: 14px;	
+	margin: 0;
+	position: absolute;
+	top: 117px;
+}
+
+header img {
+	width: 25px;
+	position: absolute;
+	top: 150px;
+	left: 225px;
+}
+
+header h2.hello {
+	font-size: 200px;
+	text-align: center;
+	color: $lightGold;
+	position: absolute;
+	left: 320px;
+	top: 65px;
+	letter-spacing: 10px;
+	font-weight: 700;
+}
+
+.aboutP {
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	width: 45%;
+	position: absolute;
+	top: 349px;
+	left: 650px;
+}
+
+.aboutPTwo {
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	width: 45%;
+	position: absolute;
+	top: 430px;
+	left: 650px;
+}
+
+.links {
+	width: 20%;
+	position: absolute;
+	top: 500px;
+	right: 220px;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+
+// top nav styles
+ul.menu {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	right: 100px;
+	li {
+		display: inline;
+		text-transform: uppercase;
+		font-weight: 400;
+		letter-spacing: 1;
+		border-top: 1px solid $gold;
+	}
+}
