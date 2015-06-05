@@ -22,15 +22,21 @@
     	<?php while ($portfolioQuery->have_posts()) : $portfolioQuery->the_post(); ?>
 				
     		<article class="portfolioItem item-<?php echo $count; ?>" id="<?php echo $post->post_name; ?>">
-    			<h3><?php the_title(); ?></h3>
-    			<p><?php the_field('short_description') ?></p>	
-    			<?php the_content(); ?>
-    			<a href="<?php the_field('live_link'); ?>">View Live</a>
+    			
     			  <div class="image">
     			        <?php $preview_image = get_field('preview_image'); ?>
     			        <img src="<?php echo $preview_image['sizes']['large'] ?>">
     			     
     			      </div>
+    			<div class="postTitle">
+	    			<h3><?php the_title(); ?></h3>
+	    		</div>
+	    		
+	    		<div class="postContent">
+	    			<p><?php the_field('short_description') ?></p>	
+	    			<a href="<?php the_field('live_link'); ?>">View Live</a>
+    			</div>
+    			<?php the_content(); ?>
     	
      		</article>
      		<?php $count++; ?>

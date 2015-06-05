@@ -1,1 +1,67 @@
 //this is where all portfolio item styles go. 
+
+section#portfolio.portfolio{
+	position: relative;
+	// display: flex;
+	// flex-direction: column;
+	padding-top: 50px;
+	h2 {
+		position: absolute;
+		font-size: 70px;
+		letter-spacing: 7px;
+		margin: 0;
+		top: 5px;
+		left: 70px;
+		z-index: 1000;
+	}
+}
+
+// portfolio item layout
+
+.portfolioItem.item-0 {
+	position: relative;
+	margin-bottom: 200px;
+}
+
+.portfolioItem.item-0 img {
+	width: 100%;
+}
+
+.portfolioItem.item-0 h3 {
+	position: absolute;
+	bottom: 70px;
+	left: 70px;
+	z-index: 100000;
+	font-size: 30px;
+	letter-spacing: 3px;
+	margin: 0;
+}
+
+.portfolioItem.item-0 .postContent {
+	font-size: 14px;
+	width: 50%;
+	border: 1px solid $grey;
+	padding: 20px 300px 20px 50px;
+	background: white;
+	position: absolute;
+	bottom: -110px;
+	left: 20px;
+}
+
+
+
+
+
+.portfolioItem.item-1 {
+	
+}
+
+.portfolioItem.item-2 {
+	
+}
+
+.portfolioItem.item-3 {
+	
+}
+
+
