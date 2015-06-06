@@ -48,11 +48,6 @@
 
 		</section>
 
-    <section class="about" id="about">
-    	<h2>About</h2>
-    	<p>Heyooooooo. This is about me. I shit the bed</p>
-    </section>
-
   </div> <!-- /.container -->
 </div> <!-- /.main -->
 
