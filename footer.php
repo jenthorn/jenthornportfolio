@@ -26,8 +26,8 @@
 		  	</div>
 		  </div>
 	  </div>
+	  <img src="<?php echo get_template_directory_uri(); ?>/images/goldLogo.png" alt="">
   </div>
-  <img src="<?php echo get_template_directory_uri(); ?>/images/goldLogo.png" alt="">
 </footer>	
 
 <script>

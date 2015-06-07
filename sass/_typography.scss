@@ -1,17 +1,18 @@
 body {
 	font-family: 'Open Sans', sans-serif;
-	color: #000000;
+	color: $black;
 }
 
 h1, h2, h3 {
 	font-family: proxima-nova;
 	font-weight: 700;
 	text-transform: uppercase;
+	color: $black;
 }
 
 a {
 	text-decoration: none;
-	color: #000;
+	color: $black;
 	&:hover {
 		color: #C5A868;
 	}

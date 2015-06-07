@@ -25,9 +25,11 @@ section#portfolio.portfolio{
 		letter-spacing: 7px;
 		margin: 0;
 		top: 100px;
-		left: 30px;
+		right: 30px;
 		z-index: 1000;
-		color: $black;
+		background: white;
+		border: 3px solid #333;
+		padding: 0 20px;
 	}
 }
 
@@ -43,6 +45,7 @@ section#portfolio.portfolio{
 
 .portfolioItem.item-0 img {
 	width: 100%;
+	border: 3px solid #333;
 }
 
 .portfolioItem.item-0 h3 {
@@ -71,25 +74,31 @@ section#portfolio.portfolio{
 .portfolioItem.item-1 {
 	display: flex;
 	position: relative;
-	margin-bottom: 50px;
+	margin: 300px 0;
+	margin-bottom: 200px;
 }
 
-.portfolioItem.item-1 .img {
+.portfolioItem.item-1 img {
+	border: 3px solid #333;
 }
 
 .portfolioItem.item-1 .postContent{
 	width: 30%;
 	border: 1px solid $grey;
-	padding: 200px 20px 5px 20px;
-	margin-left: 20px;
-	margin-bottom: 0;
+	padding: 200px 20px 100px 20px;
+	border: 3px solid #333;
+	background: white;
+	position: absolute;
+	right: -50px;
+	top: 50px;
 }
 
 .portfolioItem.item-1 .postTitle{
 	position: absolute;
 	width: 20%;
-	top: 30px;
+	top: 60px;
 	right: 55px;
+	z-index: 999999;
 	h3 {
 		font-size: 50px;
 		letter-spacing: 3px;
@@ -103,30 +112,41 @@ section#portfolio.portfolio{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-bottom: 50px;
+	margin-top: 0;
+	position: relative;
 }
 
 .portfolioItem.item-2 .image {
 	order: 2;
 	max-width: 100%;
+	img{
+		border: 3px solid #333;
+	}
 }
 
 .portfolioItem.item-2 .postContent {
 	width: 30%;
 	order: 3;
 	border: 1px solid $grey;
-	padding: 200px 100px 20px 20px;
-	margin-left: 5px;
+	padding: 110px 50px 0px 20px;
+	margin-left: 15px;
+	border: 3px solid #333;
 }
 
 .portfolioItem.item-2 .postTitle {
-	width: 20%;
-	border: 1px solid $grey;
+	width: 30%;
+	border: 3px solid #333;
+	background: white;
+	position: absolute;
+	bottom: -50px;
+	right: 150px;
+	padding: 20px 0;
+	padding-right: 250px;
+	padding-left: 20px;
 		h3 {
 		font-size: 50px;
 		letter-spacing: 3px;
-		margin-right: 10px;
-		text-align: right;
+		margin-left: 10px;
 	}
 }
 
@@ -135,15 +155,16 @@ section#portfolio.portfolio{
 .portfolioItem.item-3 {
 	display: flex;
 	flex-direction: row-reverse;
+	margin: 200px 0;
 	position: relative;
-	margin-bottom: 100px;
 }
 
 .portfolioItem.item-3 .postTitle {
 	width: 30%;
 	position: absolute;
-	left: -55px;
-	top: 10px;
+	left: -17px;
+	top: 70px;
+	z-index: 999;
 		h3 {
 		font-size: 50px;
 		letter-spacing: 3px;
@@ -152,13 +173,23 @@ section#portfolio.portfolio{
 	}
 }
 
+.portfolioItem.item-3 img {
+	border: 3px solid #333;
+	max-width: 100%;
+	
+}
+
 .portfolioItem.item-3 .postContent {
 	width: 30%;
 	order: 3;
-	border: 1px solid $grey;
+	border: 3px solid #333;
 	padding: 200px 20px 20px 100px;
 	margin-right: 10px;
 	text-align: right;
+	position: absolute;
+	background: white;
+	left: 0px;
+	top: 50px;
 }
 
 
