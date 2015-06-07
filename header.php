@@ -23,20 +23,24 @@
 
 <header>
   <div class="container">
-    <div class="topBar">
-      <h1>
-        <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-          <?php bloginfo( 'name' ); ?>
-        </a>
-      </h1>
-      <h2 class="title">Design / Development</h2>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/goldBolt.png" alt=""> 
+    
+    <div class="flexwrap">
+      <div class="logo">
+        <h1>
+          <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+          <span class="jen">Jen</span> <br> <span>Thorn</span>
+          </a>
+        </h1>
+        <h2 class="title">Design / Development</h2>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/goldBolt.png" alt="">
+      </div>
 
-      <?php wp_nav_menu( array(
-        'container' => false,
-        'theme_locations' => 'primary'
-      )); ?>
+        <?php wp_nav_menu( array(
+          'container' => false,
+          'theme_locations' => 'primary'
+        )); ?>
     </div>
+
     <!-- end of top bar logo, and nav -->
     
     <div class="hello">
