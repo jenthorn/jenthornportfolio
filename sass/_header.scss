@@ -57,6 +57,17 @@ header {
 
 // start hello feature
 
+.positionDiv {
+	position: relative;
+}
+
+.hello {
+	position: absolute;
+	left: 169px;
+	top: -50px;
+	// border: 2px solid $lightGold;
+}
+
 .hello h2{
 	font-size: 250px;
 	text-align: center;
@@ -66,30 +77,29 @@ header {
 	margin: 0;
 }
 
-.positionDiv {
-	position: relative;
-}
-
 .aboutP {
 	font-size: 20px;
 	width: 70%;
-	position: absolute;
-	right: 5px;
-	top: 110px;
-	.bolder {
-		font-weight: 600;
-	}
+	position: relative;
+	left: 365px;
+	top: 60px;
+	font-weight: 600;
 	span {
 		font-weight: 800;
 	}
 }
 
 .links {
-	position: absolute;
-	bottom: -200px;
-	right: 210px;
+	position: relative;
 	font-weight: 300;
 	font-size: 20px;
+	border: 3px solid #333;
+	width: 25%;
+	padding: 20px;
+	padding-left: 50px;
+	bottom: -55px;
+	left: 800px;
+	margin: 0;
 }
 
 
