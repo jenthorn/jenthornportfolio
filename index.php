@@ -6,7 +6,7 @@
 
 
 		<section class="portfolio" id="portfolio">
-			<h2>Projects</h2>
+			<h2 class="pro">Projects</h2>
     <?php
 
     $portfolioQuery = new WP_Query(
