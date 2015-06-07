@@ -23,22 +23,30 @@
 
 <header>
   <div class="container">
-    <h1>
-      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-        <?php bloginfo( 'name' ); ?>
-      </a>
-    </h1>
-    <h2 class="title">Design / Development</h2>
-    <img src="<?php echo get_template_directory_uri(); ?>/images/goldBolt.png" alt=""> 
+    <div class="topBar">
+      <h1>
+        <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+          <?php bloginfo( 'name' ); ?>
+        </a>
+      </h1>
+      <h2 class="title">Design / Development</h2>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/goldBolt.png" alt=""> 
 
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_locations' => 'primary'
-    )); ?>
-
-    <h2 class="hello">Hello,</h2>
-    <p class="aboutP">I'm Jen, a Designer and Front-End Developer in Toronto. Recent Alumni of HackerYou's Front-End Developer Boot Camp, I am looking for some Lorem ipsum dolor sit amet. </p>
-    <p class="aboutPTwo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, earum!</p>
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_locations' => 'primary'
+      )); ?>
+    </div>
+    <!-- end of top bar logo, and nav -->
+    
+    <div class="hello">
+      <h2 class="hello">Hello,</h2>
+    </div>
+    <div class="aboutP">
+      <p>I'm Jen, a Designer and Front-End Developer in Toronto. Recent Alumni of HackerYou's Front-End Developer Boot Camp, I am looking for some Lorem ipsum dolor sit amet. </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates laborum, ab iusto sapiente ullam reprehenderit ad ut quas cupiditate veritatis asperiores voluptatum at voluptatibus laboriosam commodi, a doloremque hic consectetur.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, earum!</p>
+    </div>
     
     <div class="links">
       <p><a href="mailto:hello@jenthorn.ca"><i class="fa fa-envelope-o"></i>  hello@jenthorn.ca</a></p>
