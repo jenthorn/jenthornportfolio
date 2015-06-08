@@ -52,7 +52,7 @@
       </div>
       <div class="links">
         <p><a href="mailto:hello@jenthorn.ca"><i class="fa fa-envelope-o"></i>  hello@jenthorn.ca</a></p>
-        <p><a href="https://github.com/jenthorn"><i class="fa fa-code-fork"></i> GitHub</a></p>
+        <p><a href="https://github.com/jenthorn"><i class="fa fa-code-fork"></i> let's collabo!</a></p>
         <p><a href="http://twitter.com/jenthorn_"><i class="fa fa-twitter"></i> jenthorn_</a></p>
       </div>
     </div>

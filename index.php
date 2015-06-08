@@ -28,13 +28,16 @@
     			        <img src="<?php echo $preview_image['sizes']['large'] ?>">
     			     
     			      </div>
-    			<div class="postTitle">
-	    			<h3><?php the_title(); ?></h3>
-	    		</div>
 
 	    		<div class="postContent">
-	    			<p><?php the_field('short_description') ?></p>	
-	    			<a href="<?php the_field('live_link'); ?>" class="viewLive">View Live</a>
+                    <div class="postTitle">
+                        <h3><?php the_title(); ?></h3>
+                    </div>
+	    			<p>
+                        <?php the_field('short_description') ?><br>
+                        <a href="<?php the_field('live_link'); ?>" class="viewLive">View Live</a>
+                    </p>	
+	    			
     			</div>
     			<?php the_content(); ?>
     	

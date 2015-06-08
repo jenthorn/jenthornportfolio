@@ -13,6 +13,7 @@
 	  		<h2>Let's Connect!</h2>
 	  		<ul class="connectLinks">
 		      <li><a href="https://github.com/jenthorn"><i class="fa fa-code-fork"></i></a></li>
+		      <li><a href="http://ca.linkedin.com/in/thornjen"><i class="fa fa-linkedin"></i></a></li>
 		      <li><a href="http://twitter.com/jenthorn_"><i class="fa fa-twitter"></i></a></li>
 		      <li><a href="https://instagram.com/jenthorn_/"><i class="fa fa-instagram"></i></a></li>
 		      <li><a href="https://medium.com/@jenthorn_"><i class="fa fa-medium"></i></a></li>
@@ -20,7 +21,7 @@
 	  	</div>
 	  
 		  <div class="hireMePlease">
-		  	<h2 class="hire">Looking for<br> a new team<br> mate?</h2>
+		  	<h2 class="hire">Looking for a new teammate?</h2>
 		  	<div class="resume">
 		  		<p>Resume</p>
 		  	</div>
