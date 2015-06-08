@@ -28,6 +28,9 @@ img {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	@include bp(medium){
+			padding: 0 25px;
+		}
 }
 
 .content {

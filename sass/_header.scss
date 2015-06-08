@@ -22,9 +22,15 @@
 	}
 	span {
 		font-size: 45px;
+		@include bp(medium){
+			font-size: 35px;
+		}
 	}
 	span.jen {
 		font-size: 40px;
+		@include bp(medium){
+			font-size: 30px;
+		}
 	}
 }
 
@@ -71,7 +77,6 @@ header {
 	position: absolute;
 	left: 7%;
 	top: 8%;
-	// border: 2px solid $lightGold;
 }
 
 .hello h2{
@@ -83,6 +88,9 @@ header {
 	font-weight: 700;
 	margin: 0;
 	line-height: 1;
+	@include bp(medium){
+			font-size: 17rem;
+		}
 }
 
 .aboutP {

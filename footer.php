@@ -21,7 +21,7 @@
 	  	</div>
 	  
 		  <div class="hireMePlease">
-		  	<h2 class="hire">Looking for a new teammate?</h2>
+		  	<h2 class="hire">Looking for<br> a new teammate?</h2>
 		  	<div class="resume">
 		  		<p>Resume</p>
 		  	</div>
