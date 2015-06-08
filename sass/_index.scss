@@ -1,3 +1,8 @@
+body {
+	background: linear-gradient(#fff, #ccc, 10%);
+}
+
+
 //this is where all portfolio item styles go. 
 
 //view live button
@@ -8,8 +13,18 @@
 	font-family: proxima-nova;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	font-size: 12px;
+	font-size: 1.9rem;
 	padding: 10px 30px;
+	&:hover {
+		background: darken($gold, 10%);
+	}
+}
+
+
+
+.postContent {
+	line-height: 1.7;
+	font-size: 1.7rem;
 }
 
 //general portfolio items
@@ -21,20 +36,24 @@ section#portfolio.portfolio{
 	padding-top: 50px;
 	h2 {
 		position: absolute;
-		font-size: 90px;
+		font-size: 10rem;
 		letter-spacing: 7px;
 		margin: 0;
 		top: 100px;
-		right: 30px;
+		right: 3%;
 		z-index: 1000;
-		background: white;
-		border: 3px solid #333;
+		background: rgba(255,255,255,0.9);
+		border: 5px solid #333;
 		padding: 0 20px;
 	}
 }
 
 // portfolio item layout
-
+.portfolioItem h3 {
+	font-size: 5.5rem;
+	letter-spacing: 3px;
+	line-height: 1.2;
+}
 // feature post
 
 .portfolioItem.item-0 {
@@ -45,28 +64,26 @@ section#portfolio.portfolio{
 
 .portfolioItem.item-0 img {
 	width: 100%;
-	border: 3px solid #333;
+	border: 5px solid #333;
 }
 
 .portfolioItem.item-0 h3 {
 	position: absolute;
 	bottom: -32px;
-	left: 350px;
+	left: 26%;
 	z-index: 100000;
-	font-size: 50px;
-	letter-spacing: 3px;
 	margin: 0;
 	width: 10%;
 }
 
 .portfolioItem.item-0 .postContent {
 	width: 50%;
-	border: 3px solid #333;
+	border: 5px solid #333;
 	padding: 31px 300px 41px 50px;
-	background: white;
+	background: rgba(255,255,255,0.9);
 	position: absolute;
 	bottom: -110px;
-	left: 20px;
+	left: 2%;
 }
 
 // post two
@@ -78,18 +95,22 @@ section#portfolio.portfolio{
 	margin-bottom: 200px;
 }
 
-.portfolioItem.item-1 img {
-	border: 3px solid #333;
+.portfolioItem.item-1 .image{
+	max-width: 80%;
+	img {
+		border: 5px solid #333;
+	}
 }
 
+
 .portfolioItem.item-1 .postContent{
-	width: 30%;
+	width: 35%;
 	border: 1px solid $grey;
-	padding: 200px 20px 100px 20px;
-	border: 3px solid #333;
-	background: white;
+	padding: 220px 50px 50px 30px;
+	border: 5px solid #333;
+	background: rgba(255,255,255,0.9);
 	position: absolute;
-	right: -50px;
+	right: 10px;
 	top: 50px;
 }
 
@@ -97,12 +118,11 @@ section#portfolio.portfolio{
 	position: absolute;
 	width: 20%;
 	top: 60px;
-	right: 55px;
+	right: 13%;
 	z-index: 999999;
 	h3 {
-		font-size: 50px;
-		letter-spacing: 3px;
 		margin: 0;
+		padding-top: 30px;
 	}
 }
 
@@ -110,43 +130,41 @@ section#portfolio.portfolio{
 
 .portfolioItem.item-2 {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 	margin-top: 0;
 	position: relative;
 }
 
 .portfolioItem.item-2 .image {
 	order: 2;
-	max-width: 100%;
+	max-width: 70%;
+	position: relative;
 	img{
-		border: 3px solid #333;
+		border: 5px solid #333;
 	}
 }
 
 .portfolioItem.item-2 .postContent {
-	width: 30%;
+	width: 35%;
 	order: 3;
 	border: 1px solid $grey;
-	padding: 110px 50px 0px 20px;
+	padding: 150px 50px 100px 50px;
+	position: absolute;
+	background: rgba(255,255,255,0.9);
+	top: 75px;
+	right: 0;
 	margin-left: 15px;
-	border: 3px solid #333;
+	border: 5px solid #333;
+	z-index: 999;
 }
 
 .portfolioItem.item-2 .postTitle {
 	width: 30%;
-	border: 3px solid #333;
-	background: white;
 	position: absolute;
-	bottom: -50px;
-	right: 150px;
-	padding: 20px 0;
-	padding-right: 250px;
-	padding-left: 20px;
+	z-index: 9999;
+	right: 24px;
+	top: 100px;
 		h3 {
-		font-size: 50px;
-		letter-spacing: 3px;
-		margin-left: 10px;
+		margin: 0 0 0 10px ;
 	}
 }
 
@@ -162,32 +180,30 @@ section#portfolio.portfolio{
 .portfolioItem.item-3 .postTitle {
 	width: 30%;
 	position: absolute;
-	left: -17px;
-	top: 70px;
+	left: 17px;
+	top: 75px;
 	z-index: 999;
 		h3 {
-		font-size: 50px;
-		letter-spacing: 3px;
 		margin: 0;
 		text-align: right;
 	}
 }
 
 .portfolioItem.item-3 img {
-	border: 3px solid #333;
+	border: 5px solid #333;
 	max-width: 100%;
 	
 }
 
 .portfolioItem.item-3 .postContent {
-	width: 30%;
+	width: 35%;
 	order: 3;
-	border: 3px solid #333;
-	padding: 200px 20px 20px 100px;
+	border: 5px solid #333;
+	padding: 200px 40px 40px 100px;
 	margin-right: 10px;
 	text-align: right;
 	position: absolute;
-	background: white;
+	background: rgba(255,255,255,0.9);
 	left: 0px;
 	top: 50px;
 }

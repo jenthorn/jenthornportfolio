@@ -33,25 +33,31 @@ ul.menu {
 	margin: 0;
 	padding: 0;
 	.menu-item {
-		background: black;
-		display: inline;
+		// background: black;
+		display: inline-block;
 		text-transform: uppercase;
 		font-weight: 400;
 		letter-spacing: 1;
-		width: 50%;
-		padding: 5px 30px;
 	}
 }
 
 .menu a {
+	width: 100%;
+	padding: 5px 30px;
+	display: inline-block;
+	background: black;
 	color: white;
-	font-weight: 700;
 	letter-spacing: 2px;
+	transition: all 0.4s;
+	&:hover {
+		color: $gold;
+	}
 }
 
 header {
-	margin-top: 30px;
-	margin-bottom: 100px;
+	padding-top: 30px;
+	padding-bottom: 80px;
+	// margin-bottom: 100px;
 }
 // end of top bar
 
@@ -63,27 +69,30 @@ header {
 
 .hello {
 	position: absolute;
-	left: 169px;
-	top: -50px;
+	left: 7%;
+	top: 8%;
 	// border: 2px solid $lightGold;
 }
 
 .hello h2{
-	font-size: 250px;
+	font-size: 25rem;
 	text-align: center;
 	color: $lightGold;
+	border-bottom: 1.4rem solid $lightGold;
 	letter-spacing: 10px;
 	font-weight: 700;
 	margin: 0;
+	line-height: 1;
 }
 
 .aboutP {
-	font-size: 20px;
-	width: 70%;
+	font-size: 2rem;
+	width: 80%;
+	line-height: 1.6;
 	position: relative;
-	left: 365px;
-	top: 60px;
-	font-weight: 600;
+	left: 20%;
+	top: -20px;
+	font-weight: 400;
 	span {
 		font-weight: 800;
 	}
@@ -91,15 +100,25 @@ header {
 
 .links {
 	position: relative;
-	font-weight: 300;
-	font-size: 20px;
-	border: 3px solid #333;
-	width: 25%;
-	padding: 20px;
-	padding-left: 50px;
-	bottom: -55px;
-	left: 800px;
+	font-size: 2rem;
+	border: 5px solid #333;
+	display: inline-block;
+	padding: 15px 50px;
+	bottom: 20px;
+	width: 300px;
+	left: calc(100% - 300px);
 	margin: 0;
+	a {
+		font-weight: 400;
+		width: 100%;
+		display: inline-block;
+		transition: all 0.4s;
+		i {
+			display: inline-block;
+			width: 10%;
+			text-align: center;
+		}
+	}
 }
 
 

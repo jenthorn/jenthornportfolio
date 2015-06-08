@@ -1,6 +1,16 @@
+html {
+
+text-rendering: optimizeLegibility !important;
+
+-webkit-font-smoothing: antialiased !important;
+	font-size: 62.5%;
+}
+
+
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Proxima Nova', sans-serif;
 	color: $black;
+	font-size: 1.7rem;
 }
 
 h1, h2, h3 {
