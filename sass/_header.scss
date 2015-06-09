@@ -6,30 +6,52 @@
 	flex-direction: column;
 	text-align: center;
 	letter-spacing: 2px;
+	@include bp(small) {
+		position: absolute;
+		top: 180px;
+		left: 25%;
+	}
 	img {
 		width: 30px;
 		margin: 0 auto;
 		margin-top: 15px;
+		@include bp(small){
+			width: 20px;
+		}
 	}
 	h2 {
 		font-size: 14px;
 		font-weight: 300;
 		margin: 0;
+		@include bp(small){
+			font-size: 20px;
+			text-align: center;
+		}
 	}
 	h1 {
 		margin: 0;
 		color: black;
+		@include bp(small) {
+			br {
+				display: none;
+			}
+		}
 	}
 	span {
 		font-size: 45px;
 		@include bp(medium){
 			font-size: 35px;
+			text-align: center;
 		}
 	}
 	span.jen {
 		font-size: 40px;
 		@include bp(medium){
 			font-size: 30px;
+			@include bp(small) {
+				font-size: 35px;
+				text-align: center;
+			}
 		}
 	}
 }
@@ -89,8 +111,14 @@ header {
 	margin: 0;
 	line-height: 1;
 	@include bp(medium){
-			font-size: 17rem;
-		}
+		font-size: 17rem;
+	}
+	@include bp(small){
+		font-size: 12rem;
+		position: relative;
+		top: 150px;
+		left: -75px;
+	}
 }
 
 .aboutP {
@@ -101,6 +129,11 @@ header {
 	left: 20%;
 	top: -20px;
 	font-weight: 400;
+	@include bp(small){
+		line-height: 1.3;
+		top: 190px;
+		left: 10%;
+	}
 	span {
 		font-weight: 800;
 	}
@@ -116,6 +149,9 @@ header {
 	width: 300px;
 	left: calc(100% - 300px);
 	margin: 0;
+	@include bp(small){
+		top: 180px;
+	}
 	a {
 		font-weight: 400;
 		width: 100%;
